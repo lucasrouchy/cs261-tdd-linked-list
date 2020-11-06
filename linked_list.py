@@ -21,3 +21,6 @@ class LinkedList:
     def is_last(self):
         if self.next.is_sentinel():
             return self
+    def last(self):
+        if self.is_empty():
+            return self
