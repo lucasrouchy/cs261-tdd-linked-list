@@ -44,4 +44,7 @@ class LinkedList:
         self = self.prev
         self.prev = self.prev.prev
         self = self.next
-        self = self.next.next
+        self.next = self.next.next
+    
+    #def insert(self):
+

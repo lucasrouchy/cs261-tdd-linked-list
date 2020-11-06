@@ -324,9 +324,9 @@ class TestLinkedList(unittest.TestCase):
     #     self.assertEqual(insertee, third_node.prev)
     #     self.assertEqual(third_node, insertee.next)
 
-    # """
-    # Retrieval
-    # """
+    """
+    Retrieval
+    """
 
     # def test_at(self):
     #     """
