@@ -257,52 +257,52 @@ class TestLinkedList(unittest.TestCase):
     # Three-Node List
     # """
 
-    # def test_last_of_three_nodes(self):
-    #     """
-    #     In a three-node list, the third node is the last node.
-    #     """
-    #     ll = LinkedList()
-    #     second_node = LinkedList(fake_value())
-    #     third_node = LinkedList(fake_value())
-    #     ll.append(second_node)
-    #     ll.append(third_node)
-    #     self.assertEqual(third_node, ll.last())
+    def test_last_of_three_nodes(self):
+        """
+        In a three-node list, the third node is the last node.
+        """
+        ll = LinkedList()
+        second_node = LinkedList(fake_value())
+        third_node = LinkedList(fake_value())
+        ll.append(second_node)
+        ll.append(third_node)
+        self.assertEqual(third_node, ll.last())
 
-    # def test_append_to_three_node_list(self):
-    #     """
-    #     When appending to three-node list, the fourth node should be inserted
-    #     between the third node and the sentinel node.
-    #     """
-    #     ll = LinkedList()
-    #     second_node = LinkedList(fake_value())
-    #     third_node = LinkedList(fake_value())
-    #     fourth_node = LinkedList(fake_value())
-    #     ll.append(second_node)
-    #     ll.append(third_node)
-    #     ll.append(fourth_node)
-    #     self.assertEqual(fourth_node, ll.prev)
-    #     self.assertEqual(ll, fourth_node.next)
-    #     self.assertEqual(third_node, fourth_node.prev)
-    #     self.assertEqual(fourth_node, third_node.next)
+    def test_append_to_three_node_list(self):
+        """
+        When appending to three-node list, the fourth node should be inserted
+        between the third node and the sentinel node.
+        """
+        ll = LinkedList()
+        second_node = LinkedList(fake_value())
+        third_node = LinkedList(fake_value())
+        fourth_node = LinkedList(fake_value())
+        ll.append(second_node)
+        ll.append(third_node)
+        ll.append(fourth_node)
+        self.assertEqual(fourth_node, ll.prev)
+        self.assertEqual(ll, fourth_node.next)
+        self.assertEqual(third_node, fourth_node.prev)
+        self.assertEqual(fourth_node, third_node.next)
 
     # """
     # Deletion
     # """
 
-    # def test_delete(self):
-    #     """
-    #     Deleting a node from the middle of a list removes it from the list.
-    #     """
-    #     ll = LinkedList()
-    #     second_node = LinkedList(fake_value())
-    #     third_node = LinkedList(fake_value())
-    #     fourth_node = LinkedList(fake_value())
-    #     ll.append(second_node)
-    #     ll.append(third_node)
-    #     ll.append(fourth_node)
-    #     third_node.delete()
-    #     self.assertEqual(fourth_node, second_node.next)
-    #     self.assertEqual(second_node, fourth_node.prev)
+    def test_delete(self):
+        """
+        Deleting a node from the middle of a list removes it from the list.
+        """
+        ll = LinkedList()
+        second_node = LinkedList(fake_value())
+        third_node = LinkedList(fake_value())
+        fourth_node = LinkedList(fake_value())
+        ll.append(second_node)
+        ll.append(third_node)
+        ll.append(fourth_node)
+        third_node.delete()
+        self.assertEqual(fourth_node, second_node.next)
+        self.assertEqual(second_node, fourth_node.prev)
 
     # """
     # Insertion

@@ -40,4 +40,8 @@ class LinkedList:
             new_node.prev = self
             return
         return self.next.append(new_node)
-        
+    def delete(self):
+        self = self.prev
+        self.prev = self.prev.prev
+        self = self.next
+        self = self.next.next
