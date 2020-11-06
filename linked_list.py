@@ -18,3 +18,6 @@ class LinkedList:
     def is_empty(self):
         if self.prev == self and self.next == self:
             return True
+    def is_last(self):
+        if self.next.is_sentinel():
+            return self
