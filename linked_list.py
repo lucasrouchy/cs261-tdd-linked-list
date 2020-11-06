@@ -24,3 +24,8 @@ class LinkedList:
     def last(self):
         if self.is_empty():
             return self
+    def append(self, new_node):
+        if self.is_empty():
+            self.next = new_node
+            new_node.next = self
+            return
