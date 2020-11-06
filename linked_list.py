@@ -32,4 +32,12 @@ class LinkedList:
             self.prev = new_node
             new_node.prev = self
             return
+        if self.is_sentinel():
+            self.prev = new_node
+            new_node.next = self
+            self = self.last()
+            self.next = new_node
+            new_node.prev = self
+            return
+        return self.next.append(new_node)
         
