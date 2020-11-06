@@ -28,4 +28,6 @@ class LinkedList:
         if self.is_empty():
             self.next = new_node
             new_node.next = self
+            self.prev = new_node
+            new_node.prev = self
             return
