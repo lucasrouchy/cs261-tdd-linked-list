@@ -15,12 +15,6 @@ class LinkedList:
     def is_sentinel(self):
         if self.value == None:
             return True
-             
-
-
-
-
-
-
-
-    
+    def is_empty(self):
+        if self.prev == self and self.next == self:
+            return True
